@@ -5,15 +5,16 @@ function solveEquation(a, b, c) {
   let D = Math.pow(b, 2) - 4 * a * c;
 
   if (D < 0) {
-    return arr;
+    arr.push()
   } else if (D == 0) {
     let X = -b / (2 * a);
-    return arr = [X];
+    arr.push(X)
   } else if (D > 0) {
     let x1 = (-b + Math.sqrt(D)) / (2 * a);
     let x2 = (-b - Math.sqrt(D)) / (2 * a);
-    return arr = [x1, x2]
+    arr.push(x1, x2)
   }
+  return arr
 }
 
 
