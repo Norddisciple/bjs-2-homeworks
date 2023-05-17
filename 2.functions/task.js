@@ -5,10 +5,10 @@ function getArrayParams(...arr) {
 
   max = Math.max(...arr);
   min = Math.min(...arr);
-  sum = arr.reduce((acc, curr) => acc + curr, 0);
+  sum = arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
 
-  let avg = Number((sum/ arr.length).toFixed(2));
+  let avg = Number((sum / arr.length).toFixed(2));
 
   return { min: min, max: max, avg: avg };
 }
@@ -87,8 +87,7 @@ function makeWork(arrOfArr, func) {
   let maxWorkerResult = -Infinity;
 
   for (let i = 0; i < arrOfArr.length; i++) {
-    //func(...arrOfArr);
-    
+
     const resultFunc = func(...arrOfArr[i]);
 
     if (resultFunc > maxWorkerResult) {
