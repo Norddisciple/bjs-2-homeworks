@@ -5,8 +5,15 @@ function getArrayParams(...arr) {
 
   max = Math.max(...arr);
   min = Math.min(...arr);
-  sum = arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+  sum = arr.reduce((accumulator, item) => accumulator + item, 0);
 
+  // for (i = 0; i < arr.length; i++) {
+  //   sum += arr[i];
+  // }
+
+  // for(let element of arr){
+  //   sum += element;
+  // }
 
   let avg = Number((sum / arr.length).toFixed(2));
 
