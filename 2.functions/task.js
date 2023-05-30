@@ -1,11 +1,7 @@
 function getArrayParams(...arr) {
-  let min = Infinity;
-  let max = -Infinity;
-  let sum = 0;
-
-  max = Math.max(...arr);
-  min = Math.min(...arr);
-  sum = arr.reduce((accumulator, item) => accumulator + item, 0);
+  let min = Math.min(...arr);
+  let max = Math.max(...arr);
+  let sum = arr.reduce((accumulator, item) => accumulator + item, 0);
 
   // for (i = 0; i < arr.length; i++) {
   //   sum += arr[i];
