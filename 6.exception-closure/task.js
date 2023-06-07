@@ -13,7 +13,6 @@ function validateCount(value) {
     }
 }
 
-
 class Triangle {
     constructor(side1, side2, side3) {
         this.side1 = side1;
@@ -37,18 +36,19 @@ class Triangle {
     }
 }
 
-
 function getTriangle(side1, side2, side3) {
-        try {
-            return new Triangle(side1, side2, side3);
-        } catch  {
-            return {
-                get area() { 
-                    return "Ошибка! Треугольник не существует" },
-                get perimeter() {
-                     return "Ошибка! Треугольник не существует" }
+    try {
+        return new Triangle(side1, side2, side3);
+    } catch {
+        return {
+            get area() {
+                return "Ошибка! Треугольник не существует"
+            },
+            get perimeter() {
+                return "Ошибка! Треугольник не существует"
             }
-        } 
+        }
     }
+}
 
 
