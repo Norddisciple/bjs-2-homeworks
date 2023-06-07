@@ -42,11 +42,9 @@ function getTriangle(side1, side2, side3) {
     } catch {
         return {
             get area() {
-                return "Ошибка! Треугольник не существует"
-            },
+                return "Ошибка! Треугольник не существует" },
             get perimeter() {
-                return "Ошибка! Треугольник не существует"
-            }
+                return "Ошибка! Треугольник не существует"},
         }
     }
 }
