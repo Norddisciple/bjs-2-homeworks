@@ -5,13 +5,13 @@
     } return parseResult;
 }
 
-function validateCount(value) {
-    try {
-        return parseCount(value);
-    } catch (Error) {
-        return Error;
-    }
-}
+// function validateCount(value) {
+//     try {
+//         return parseCount(value);
+//     } catch (Error) {
+//         return Error;
+//     }
+// }
 
 // class Triangle {
 //     constructor(side1, side2, side3) {
